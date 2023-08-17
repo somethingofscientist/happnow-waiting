@@ -14,6 +14,9 @@ const Comingsoon_page = () => {
                 </div>
                 <div className={styles.container}>
                     <div className={styles.left_container}>
+                        <div className={styles.time}>
+                            21 Days Left
+                        </div>
                         <div className={styles.text}>
                             A app that lets you know What, Where  and when ... all the cool events & venues Happening Now in the palm of your hands.
                         </div>
