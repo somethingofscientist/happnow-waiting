@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
-// axios.defaults.baseURL = "our backend url link";
+import axios from 'axios';
+axios.defaults.baseURL = "https://happnow-api.applore.in";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
