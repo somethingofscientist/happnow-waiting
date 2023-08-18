@@ -73,7 +73,7 @@
 
 .email_box input {
     margin-top: 10px;
-    width: 35%;
+    width: 40%;
     background-color: transparent;
     display: flex;
     border-top-left-radius: 12px;
@@ -84,6 +84,10 @@
     /* background-color: red; */
     border: none;
     border: 1px solid #0F415E;
+}
+
+input:focus{
+    outline: none;
 }
 
 /* .email_box input:focus{
