@@ -19,7 +19,7 @@ const Comingsoon_page = () => {
                 email,
             });
 
-            if (response.status == 200) {
+            if (response.status === 200) {
                 toast.dismiss();
                 toast.success("Thank You!", {
                     position: "top-right",
