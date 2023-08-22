@@ -7,7 +7,7 @@ import { BiLogoFacebook, BiLogoSnapchat } from 'react-icons/bi';
 import { AiFillLinkedin, AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai'
 import axios from 'axios';
 import { toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';  
 
 const Comingsoon_page = () => {
     const [email, setEmail] = useState('');
