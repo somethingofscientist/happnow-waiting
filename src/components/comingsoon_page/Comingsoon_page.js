@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from './Comingsoon_page.module.css';
 import logo from '../../assests/logo.png';
-import rocket from '../../assests/img2.png'
+import rocket from '../../image/phone.png'
 // import 
 import { BiLogoFacebook, BiLogoSnapchat } from 'react-icons/bi';
 import { AiFillLinkedin, AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai'

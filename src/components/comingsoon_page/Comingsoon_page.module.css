@@ -59,7 +59,7 @@
 }
 
 .right_container {
-    width: 35%;
+    width: 22%;
     /* border: 1px solid lime; */
     text-align: center;
 }
@@ -282,11 +282,12 @@ input:focus {
     .right_container {
         width: 100%;
         padding-top: 50px;
-        text-align: left !important;
+        text-align: center !important;
     }
 
     .right_container img {
-        width: 50%;
+        width: 60%;
+        text-align: center;
     }
 
     .left_container {
