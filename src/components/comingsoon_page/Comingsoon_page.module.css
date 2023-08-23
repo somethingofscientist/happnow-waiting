@@ -8,6 +8,7 @@
     .main_container {
         padding: 20px 100px 0 100px;
         display: flex;
+        /* height: 100vh; */
         flex-wrap: wrap;
         background-color: #F6EBE5;
     }
@@ -19,6 +20,21 @@
         line-height: 52px !important;
         font-weight: 700;
         /* background-color: purple; */
+    }
+
+    .left_container {
+        width: 55%;
+        /* border: 1px solid lime; */
+        /* text-align: justify; */
+    }
+    .right_container {
+        width: 24% !important;
+        /* border: 1px solid lime; */
+        text-align: center;
+    }
+    
+    .right_container img {
+        width: 100% !important;
     }
 }
 
@@ -86,7 +102,7 @@
 
 .text2 {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .email_box {
