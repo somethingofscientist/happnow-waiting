@@ -191,6 +191,10 @@ input:focus {
     justify-content: space-evenly;
     font-size: 30px !important;
 }
+.footer_logo a{
+    text-decoration: none !important;
+    color: inherit;
+}
 
 .footer span {
     margin-right: 20px;

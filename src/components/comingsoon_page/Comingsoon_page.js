@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styles from './Comingsoon_page.module.css';
 import logo from '../../assests/logo.png';
 import phone1 from '../../image/image__1_-removebg-preview.png'
+import phone3 from '../../image/image__2_-removebg-preview.png'
 import phone2 from '../../image/phone.png'
 // import 
 import { BiLogoFacebook, BiLogoSnapchat } from 'react-icons/bi';
@@ -68,7 +69,7 @@ const Comingsoon_page = () => {
                     <div className={styles.right_container}>
                         <img src={phone1} alt="rocket" />
                         <img src={phone2} alt="rocket" />
-                        {/* <img src={rocket} alt="rocket" /> */}
+                        {/* <img src={phone3} alt="rocket" /> */}
                     </div>
                 </div>
 
@@ -92,11 +93,21 @@ const Comingsoon_page = () => {
 
                 <div className={styles.footer}>
                     <div className={styles.footer_logo}>
-                        <span><BiLogoFacebook /></span>
-                        <span><AiOutlineTwitter /></span>
-                        <span><BiLogoSnapchat /></span>
-                        <span><AiFillInstagram /></span>
-                        <span><AiFillLinkedin /></span>
+                        <a href="https://www.facebook.com/HappNowApp?mibextid=LQQJ4d" target="_blank">
+                            <span><BiLogoFacebook /></span>
+                        </a>
+                        <a href="">
+                            <span><AiOutlineTwitter /></span>
+                        </a>
+                        <a href="">
+                            <span><BiLogoSnapchat /></span>
+                        </a>
+                        <a href="https://www.instagram.com/happnowbali/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank">
+                            <span><AiFillInstagram /></span>
+                        </a>
+                        <a href="">
+                            <span><AiFillLinkedin /></span>
+                        </a>
                     </div>
                     <div className={styles.copyright_text}>
                         © Copyrights HappNow | All Rights Reserved
