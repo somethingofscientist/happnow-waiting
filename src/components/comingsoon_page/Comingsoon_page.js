@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import styles from './Comingsoon_page.module.css';
 import logo from '../../assests/logo.png';
-import rocket from '../../image/phone.png'
+import phone1 from '../../image/image__1_-removebg-preview.png'
+import phone2 from '../../image/phone.png'
 // import 
 import { BiLogoFacebook, BiLogoSnapchat } from 'react-icons/bi';
 import { AiFillLinkedin, AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai'
@@ -65,7 +66,9 @@ const Comingsoon_page = () => {
                         </div>
                     </div>
                     <div className={styles.right_container}>
-                        <img src={rocket} alt="rocket" />
+                        <img src={phone1} alt="rocket" />
+                        <img src={phone2} alt="rocket" />
+                        {/* <img src={rocket} alt="rocket" /> */}
                     </div>
                 </div>
 
