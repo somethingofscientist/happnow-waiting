@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './Comingsoon_page.module.css';
 import logo from '../../assests/logo.png';
 import phone1 from '../../image/image__1_-removebg-preview.png'
@@ -13,7 +13,59 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Comingsoon_page = () => {
     const [email, setEmail] = useState('');
+    // const [remainingTime, setRemainingTime] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
+    // const calculateRemainingTime = () => {
+    //     const currentDate = new Date();
+    //     const targetDate = new Date('2023-09-01'); // September 18, 2023
+    //     const timeDifference = targetDate - currentDate;
+
+    //     if (timeDifference > 0) {
+    //         const seconds = Math.floor((timeDifference / 1000) % 60);
+    //         const minutes = Math.floor((timeDifference / 1000 / 60) % 60);
+    //         const hours = Math.floor((timeDifference / (1000 * 60 * 60)) % 24);
+    //         const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+    //         return {
+    //             days: days,
+    //             hours: hours,
+    //             minutes: minutes,
+    //             seconds: seconds
+    //         };
+    //     } else {
+    //         return {
+    //             days: 0,
+    //             hours: 0,
+    //             minutes: 0,
+    //             seconds: 0
+    //         };
+    //     }
+    // };
+
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         const remainingTime = calculateRemainingTime();
+    //         setRemainingTime(remainingTime);
+    //     }, 1000); // Update every second
+
+    //     return () => clearInterval(interval);
+    // }, []);
+
+    const [remainingDays, setRemainingDays] = useState(0);
+
+    const calculateRemainingDays = () => {
+        const currentDate = new Date();
+        const targetDate = new Date('2023-09-18'); // September 18, 2023
+        const timeDifference = targetDate - currentDate;
+        const daysDifference = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+        return daysDifference >= 0 ? daysDifference : 0;
+    };
+
+    useEffect(() => {
+        const days = calculateRemainingDays();
+        setRemainingDays(days);
+    }, []);
+        
     const handleSubscribe = async (e) => {
         e.preventDefault();
         try {
@@ -59,7 +111,12 @@ const Comingsoon_page = () => {
                 <div className={styles.container}>
                     <div className={styles.left_container}>
                         <div className={styles.time}>
-                            21 Days Left
+                            {/* 21 Days Left */}
+                            {/* {remainingTime.days} days */}
+                            {/* {remainingTime.hours} hours */}
+                            {/* {remainingTime.minutes} minutes,  */}
+                            {/* {remainingTime.seconds} seconds */}
+                            {remainingDays} {remainingDays === 1 ? 'Day' : 'Days'} Left
                         </div>
                         <div className={styles.text}>
                             Elevate your experience with our app. Know What, Where and When ... all the cool events & venues
@@ -96,16 +153,16 @@ const Comingsoon_page = () => {
                         <a href="https://www.facebook.com/HappNowApp?mibextid=LQQJ4d" target="_blank">
                             <span><BiLogoFacebook /></span>
                         </a>
-                        <a href="">
+                        <a href="" target="_blank">
                             <span><AiOutlineTwitter /></span>
                         </a>
-                        <a href="">
+                        <a href="" target="_blank">
                             <span><BiLogoSnapchat /></span>
                         </a>
                         <a href="https://www.instagram.com/happnowbali/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank">
                             <span><AiFillInstagram /></span>
                         </a>
-                        <a href="">
+                        <a href="" target="_blank">
                             <span><AiFillLinkedin /></span>
                         </a>
                     </div>
