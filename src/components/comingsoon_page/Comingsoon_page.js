@@ -116,7 +116,8 @@ const Comingsoon_page = () => {
                             {/* {remainingTime.hours} hours */}
                             {/* {remainingTime.minutes} minutes,  */}
                             {/* {remainingTime.seconds} seconds */}
-                            {remainingDays} {remainingDays === 1 ? 'Day' : 'Days'} Left
+                            {/* {remainingDays} {remainingDays === 1 ? 'Day' : 'Days'} Left */}
+                            Watch this space for something awesome!
                         </div>
                         <div className={styles.text}>
                             Elevate your experience with our app. Know What, Where and When ... all the cool events & venues
